@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_4" data-name="Camada 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188.47 174.68">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f4f4f4;
+      }
+
+      .cls-2 {
+        fill: #282828;
+      }
+    </style>
+  </defs>
+  <path class="cls-2" d="M51.59,89.88s13.06-3,31.24-10.06,42.18,3.75,48.88,7.52-4.24,25.83-21,30.42-31.88,4.76-59.12-27.88Z"/>
+  <path class="cls-1" d="M67.47,88.11v8.12h15.71v-12.35s-6.35-2.82-15.71,4.24Z"/>
+  <path class="cls-1" d="M86,84.05s9.44-6,19.32-1.15v13.94h-19.32v-12.79Z"/>
+  <path class="cls-1" d="M109.12,82.64s14,.24,16.71,12.06l-16.71,.76v-12.82Z"/>
+</svg>

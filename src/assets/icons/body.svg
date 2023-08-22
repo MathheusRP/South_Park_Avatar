@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 198.95 198.95">
+  
+  <defs>
+  
+    <style>
+      .cls-1 {
+        fill: #D4D4D4;
+        
+      }
+    </style>
+  </defs>
+  
+  <g id="Camada_1" data-name="Camada 1">
+    <image width="800" height="800" transform="scale(.25)" xlink:href="../../Downloads/SP-Studio.png"/>
+  </g>
+  <g id="Camada_2" data-name="Camada 2">
+    <circle class="cls-1" cx="99.47" cy="79.53" r="50.03"/>
+    <path class="cls-1" d="M67.18,119.65s29.88,27.06,64.35,0c0,0,7.88,11.41,10.12,27.29l-12.35,6c1.45,2.31,2.9,4.63,4.35,6.94l-2.35,.71,.35,9.29,5.71,2.62H61.63l5.47-2.38-.1-9.82-2.24-.5-7.94-12.79s1.82-12.44,10.35-27.35Z"/>
+    <circle class="cls-1" cx="62.12" cy="152.9" r="7.93"/>
+    <circle class="cls-1" cx="136.82" cy="152.96" r="7.93"/>
+    
+  </g>
+     
+</svg>
