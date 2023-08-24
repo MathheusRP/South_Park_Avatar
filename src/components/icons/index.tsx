@@ -2,10 +2,10 @@ import { IconStyled } from "./style";
 
 interface IIcon {
     svg: any
-    color1?: string
-    color2?: string
-    color3?: string
-    color4?: string
+    color1?: string | null
+    color2?: string | null
+    color3?: string | null
+    color4?: string | null
 }
 
 export const Icon = ({ svg, color1, color2, color3, color4 }: IIcon) => {

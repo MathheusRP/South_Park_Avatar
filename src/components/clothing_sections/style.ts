@@ -34,6 +34,7 @@ export const ClothingSectionStyle = styled.section`
             /* background-color: brown; */
             border-radius: 8px;
             /* opacity: 70%; */
+            cursor: pointer;
 
             img {
                 width: 100%;

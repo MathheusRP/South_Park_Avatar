@@ -59,7 +59,7 @@ export const HomeStyled = styled.section`
                 border-radius: 5px;
             }
 
-            ul {
+            .optionsList {
                 display: flex;
                 flex-wrap: wrap;
                 display: grid;
@@ -68,10 +68,6 @@ export const HomeStyled = styled.section`
                 padding-right: 15px;
                 justify-content: space-between;
                 
-                li {
-                    height: 220px;
-                    cursor: pointer;
-                }
             }
         }
     }
@@ -88,12 +84,15 @@ export const HomeStyled = styled.section`
             width: 80%;
             max-width: 500px;
             /* min-width: 500px; */
-            height: 700px;
-            background-color: var(--black);
-            border: 6px solid var(--primaryColor);
+            height: 800px;
+            /* background-color: var(--black); */
+            /* border: 6px solid var(--primaryColor); */
             border-radius: 32px;
             display: flex;
             justify-content: center;
+            position: relative;
+            
+            /* filter: brightness(1.2); */
         }
     }
 

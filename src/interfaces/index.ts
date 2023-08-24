@@ -1,8 +1,7 @@
 export interface IBodyColor {
     id: number
-    color1: string
-    color2: string
-    color3: string
+    skin: string
+    underwear: string
 }
 
 export interface IModelView {
