@@ -6,16 +6,23 @@ import MouthIcon from "../../assets/icons/mouth.svg"
 import ShirtIcon from "../../assets/icons/shirt.svg"
 import Pants from "../../assets/icons/pants.svg"
 
+import { UserContext } from "../../context/useContext";
+import { useContext } from "react"
+
+import { hairList } from "../../data/hairList";
+import { bodyList } from "../../data/bodyColor";
 
 export const ClothingSection = () => {
+
+    const { setMenu } = useContext(UserContext)
 
     return (
         <ClothingSectionStyle>
             <ul>
-                <li>
+                <li onClick={() => setMenu("body")}>
                     <img src={BodyIcon} alt="Body icon" />
                 </li>
-                <li>
+                <li onClick={() => setMenu("hair")}>
                     <img src={HairIcon} alt="Hair icon" />
                 </li>
                 <li>

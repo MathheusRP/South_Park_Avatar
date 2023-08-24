@@ -1,6 +1,12 @@
 import { ModelViewStyled } from "./style";
+// import { BodyView } from "../bodyPart/body";
+import { HairView } from "../bodyPart/hair";
+import { UserContext } from "../../context/useContext";
+import { useContext } from "react"
 
-export const ModelView = ({ body }: any) => {
+export const ModelView = ({ body, hair }: any) => {
+
+    const { hairColor } = useContext(UserContext)
 
     return (
         <ModelViewStyled body={body}>
@@ -38,6 +44,15 @@ export const ModelView = ({ body }: any) => {
                         <path className="cls-3" d="M66.64,328.66s9.3-11.99,60.13,6.36c0,0,14.21,5.56,15.53,5.74,1.32,.18,19.41-6.62,19.41-6.62,0,0,46.47-15.7,61.44-6.88,.76-3.41,1.51-6.81,2.27-10.22,0,0-1.2,.45-2.53-2-.37-.69-.71-1.31-1.15-2.45-.28-.74-.48-1.36-.61-1.81-50.73,.01-101.46,.02-152.2,.04-.22,1.1-.64,2.61-1.5,4.25-.83,1.59-1.79,2.78-2.55,3.58l1.76,10.02Z" />
                     </g>
                 </svg>
+            </div>
+            <div className="hair">
+                {
+                    hair ? (
+                        <HairView svg={hair.svg} color={hairColor || hair.color} />
+                    ) : (
+                        <></>
+                    )
+                }
             </div>
         </ModelViewStyled>
 
