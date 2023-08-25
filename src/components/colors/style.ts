@@ -13,6 +13,21 @@ export const ColorsListStyled = styled.section`
     border: 4px solid var(--primaryColor);
     border-bottom: none;
     border-radius: 16px 16px 0px 0px;
+    transition: 1s;
+
+    &.close {
+        transform: translateY(120%);
+        transition: 1s;
+
+        button {
+            top: -160px;
+            transition: 1.3s;
+        }
+    }
+
+    &.off {
+        display: none;
+    }
 
     button {
         height: 75px;
@@ -23,13 +38,27 @@ export const ColorsListStyled = styled.section`
         color: var(--primaryColor);
         position: absolute;
         margin: 0px auto;
-        /* left: 20px;
-        right: auto; */
         top: -40px;
         align-self: center;
         background-color: rgb(200, 200, 200);
         box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.4);
+        transition: 1s;
+        cursor: pointer;
+    }
 
+    .colorContainer {
+        display: flex;
+
+        .color {
+            width: 100px;
+            height: 100px;
+            border: none;
+            border-radius: 50%;
+                
+            &::-webkit-color-swatch {
+                border-radius: 50%;
+            }
+        }
     }
 
     ul {
@@ -39,11 +68,9 @@ export const ColorsListStyled = styled.section`
         padding: 50px 15px 15px 15px;
         flex-wrap: wrap;
         
-        
-
         li {
             width: 50px;
-            /* height: 20px; */
+
         }
     }
 `

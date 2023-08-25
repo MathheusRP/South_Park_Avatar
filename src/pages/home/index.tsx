@@ -1,5 +1,4 @@
 import { HomeStyled } from "./style";
-// import modelo from "../../assets/image/SP-Studio.png"
 import { ClothingSection } from "../../components/clothing_sections/index";
 import { BodyView } from "../../components/bodyPart/body";
 import { Body2 } from "../../assets/svg/body";
@@ -9,12 +8,20 @@ import { hairList } from "../../data/hairList";
 import { HairView } from "../../components/bodyPart/hair";
 import { ColorList } from "../../components/colors";
 
+import { hatList } from "../../data/hatList"
+import { HatView } from "../../components/bodyPart/hat";
+
 import { UserContext } from "../../context/useContext";
 import { useContext } from "react";
 
 export const Home = () => {
 
-    const { body, setBody, menu, setHair, hair } = useContext(UserContext)
+    const { body, setBody, menu, setHair, hair, setHat, setTypeHair } = useContext(UserContext)
+
+    const setHatFunction = (hat: any) => {
+        setHat(hat)
+        setTypeHair(hat.typeHair)
+    }
 
     return (
         <HomeStyled>
@@ -24,31 +31,36 @@ export const Home = () => {
                     <ul className="optionsList">
                         {
                             menu == "body" ? (
-                                bodyList.map((skin) => {
+                                bodyList.map((skin, index) => {
                                     return (
-                                        <span onClick={() => setBody(skin)}>
+                                        <span key={index} onClick={() => setBody(skin)}>
                                             <BodyView svg={<Body2 />} skin={skin.skin} underwear={skin.underwear} />
                                         </span>
                                     )
                                 })
-                            ) : "body" ? (
-                                hairList.map((hair) => {
+                            ) : menu == "hair" ? (
+                                hairList.map((hair, index) => {
                                     return (
-                                        <span onClick={() => setHair(hair)}>
-                                            <HairView svg={hair.svg} color={hair.color} />
-                                        </span>
+                                        <div key={index} className="container" onClick={() => setHair(hair)}>
+                                            <span className="circle"></span>
+                                            <div className="icon">
+                                                <HairView svg={hair.svg} color={hair.color} />
+                                            </div>
+                                        </div>
+                                    )
+                                })
+                            ) : menu == "hat" ? (
+                                hatList.map((hat, index) => {
+                                    return (
+                                        <div key={index} className="container" onClick={() => setHatFunction(hat)}>
+                                            <span className="circle"></span>
+                                            <div className="icon">
+                                                <HatView svg={hat.svg} color1={hat.color1} color2={hat.color2} color3={hat.color3} color4={hat.color4} />
+                                            </div>
+                                        </div>
                                     )
                                 })
                             ) : (<></>)
-
-
-                            // bodyList.map((skin) => {
-                            //     return (
-                            //         <span onClick={() => setBody(skin)}>
-                            //             <Icon svg={<Body2 />} color1={skin.color1} color2={skin.color2} color3={skin.color3} />
-                            //         </span>
-                            //     )
-                            // })
                         }
                     </ul>
                     <ColorList />

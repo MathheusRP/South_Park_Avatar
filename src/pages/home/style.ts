@@ -15,20 +15,16 @@ export const HomeStyled = styled.section`
         flex-direction: column;
         box-shadow: 5px 0px 10px rgb(0, 0, 0, 0.3);
         gap: 15px;
-        
 
         .menu {
             width: 100%;
             height: 150px;
-            /* border-bottom: 4px solid var(--grey); */
             display: flex;
-            /* border: solid red 2px; */
             overflow-x: scroll;
             
 
             &::-webkit-scrollbar{
                 background-color: var(--grey);
-                /* width: 5px; */
                 height: 10px;
                 border-radius: 5px;
             }
@@ -37,16 +33,34 @@ export const HomeStyled = styled.section`
                 background-color: var(--primaryColor);
                 border-radius: 5px;
             }
-
-           
         }
 
         .options {
             width: 100%;
             height: 100%;
-            /* border: solid red 2px; */
             overflow-y: auto;
             overflow-x: hidden;
+
+            .container {
+                position: relative;
+
+                .circle {
+                    height: 145px;
+                    width: 145px;
+                    background-color: var(--grey);
+                    position: absolute;
+                    z-index: 0;
+                    top: 34px;
+                    left: 18px;
+                    border-radius: 50%; 
+                }
+
+                .icon {
+                    position: absolute;
+                    top: 0px;
+                    width: 100%;
+                }
+            }
             
             &::-webkit-scrollbar{
                 background-color: var(--grey);
@@ -67,7 +81,7 @@ export const HomeStyled = styled.section`
                 grid-row-gap: 25px;
                 padding-right: 15px;
                 justify-content: space-between;
-                
+                cursor: pointer;  
             }
         }
     }
@@ -75,24 +89,19 @@ export const HomeStyled = styled.section`
     .viewer {
         width: 50%;
         height: 100vh;
-        /* border: solid red 4px; */
         display: flex;
         align-items: center;
         justify-content: center;
 
         .Window {
+            margin-top: 300px;
             width: 80%;
-            max-width: 500px;
-            /* min-width: 500px; */
+            max-width: 400px;
             height: 800px;
-            /* background-color: var(--black); */
-            /* border: 6px solid var(--primaryColor); */
             border-radius: 32px;
             display: flex;
             justify-content: center;
             position: relative;
-            
-            /* filter: brightness(1.2); */
         }
     }
 

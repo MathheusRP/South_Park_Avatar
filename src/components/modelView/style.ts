@@ -37,6 +37,14 @@ export const ModelViewStyled = styled.section<IModelView>`
         /* height: 100%; */
         width: 100%;
         z-index: 5;
+        top: -60px;
+        left: -10px;
+    }
+
+    .hat {
+        position: absolute;
+        width: 100%;
+        z-index: 5;
         top: -70px;
         left: -10px;
     }

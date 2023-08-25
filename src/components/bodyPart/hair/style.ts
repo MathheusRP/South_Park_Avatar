@@ -5,7 +5,7 @@ interface IHair {
 }
 
 export const IconStyled = styled.li<IHair>`
-    
+    z-index: 10;
 
     ${({ color }) => {
         return css`
@@ -21,6 +21,8 @@ export const IconStyled = styled.li<IHair>`
 
             .cls-3{
                 fill: ${color};
+                filter: brightness(0.5);
+                opacity: 50%;
             }
 
         `
