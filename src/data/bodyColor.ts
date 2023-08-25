@@ -3,22 +3,22 @@ import { IBodyColor } from "../interfaces"
 export const bodyList: IBodyColor[] = [
     {
         id: 1,
-        skin: "#c3a68a",
+        skin: "#F5E0CD",
         underwear: "#ededed",
     },
     {
         id: 2,
-        skin: "#c3a68a",
+        skin: "#FEDAB5",
         underwear: "#ededed"
     },
     {
         id: 3,
-        skin: "#c3a68a",
+        skin: "#EACBC6",
         underwear: "#ededed"
     },
     {
         id: 4,
-        skin: "#c3a68a",
+        skin: "#F0D0B4",
         underwear: "#ededed"
     },
     {
@@ -38,7 +38,7 @@ export const bodyList: IBodyColor[] = [
     },
     {
         id: 8,
-        skin: "#86684C",
+        skin: "#926C59",
         underwear: "#ededed"
     },
     {

@@ -1,7 +1,8 @@
 import { ColorsListStyled } from "./style";
 import { PiPaintBrushBroadBold } from "react-icons/pi"
 import { UserContext } from "../../context/useContext";
-import { useContext } from "react"
+import { useContext, useState, useEffect } from "react"
+
 
 const colorList = [
     "rgb(30, 30, 30)",
@@ -56,25 +57,47 @@ export const ColorList = () => {
 
     const { setHairColor, menu } = useContext(UserContext)
 
+
     const setColor = (color: string) => {
         if (menu == "hair") {
             setHairColor(color)
         }
     }
 
+    const [colorStatus, setColorStatus] = useState("close")
+
+    const openAndClose = () => {
+        if (colorStatus == "close") {
+            setColorStatus("open")
+        } else {
+            setColorStatus("close")
+        }
+    }
+
+    useEffect(() => {
+        if (menu == "body") {
+            setColorStatus("off")
+        }
+        else {
+            setColorStatus("close")
+        }
+    }, [menu])
+
     return (
-        <ColorsListStyled>
-            <button type="button"><PiPaintBrushBroadBold className="icon" /></button>
+        <ColorsListStyled className={colorStatus}>
+            <button onClick={() => openAndClose()} type="button"><PiPaintBrushBroadBold className="icon" /></button>
+
             <ul>
                 {
-                    colorList.map((color) => {
+                    colorList.map((color, index) => {
                         return (
-                            <li onClick={() => setColor(color)} style={{ "backgroundColor": `${color}` }}></li>
+                            <li key={index} onClick={() => setColor(color)} style={{ "backgroundColor": `${color}` }}></li>
                         )
                     })
                 }
 
             </ul>
+
         </ColorsListStyled>
     )
 }

@@ -5,12 +5,10 @@ import HairIcon from "../../assets/icons/hair.svg"
 import MouthIcon from "../../assets/icons/mouth.svg"
 import ShirtIcon from "../../assets/icons/shirt.svg"
 import Pants from "../../assets/icons/pants.svg"
+import HatIcon from "../../assets/icons/hat.svg"
 
 import { UserContext } from "../../context/useContext";
 import { useContext } from "react"
-
-import { hairList } from "../../data/hairList";
-import { bodyList } from "../../data/bodyColor";
 
 export const ClothingSection = () => {
 
@@ -24,6 +22,9 @@ export const ClothingSection = () => {
                 </li>
                 <li onClick={() => setMenu("hair")}>
                     <img src={HairIcon} alt="Hair icon" />
+                </li>
+                <li onClick={() => setMenu("hat")}>
+                    <img src={HatIcon} alt="Hat icon" />
                 </li>
                 <li>
                     <img src={EyesIcon} alt="Eyes icon" />
