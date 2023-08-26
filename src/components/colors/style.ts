@@ -73,4 +73,12 @@ export const ColorsListStyled = styled.section`
 
         }
     }
+
+
+    @media (max-width: 1200px) {
+        
+        button {
+            transform: scale(0.7);
+        }
+    }
 `

@@ -19,6 +19,8 @@ interface IUserContext {
     setHat: any
     typeHair: number
     setTypeHair: any
+    eyes: any
+    setEyes: any
 }
 
 export const UserContext = createContext({} as IUserContext)
@@ -30,13 +32,14 @@ export const UserProvider = ({ children }: IUserProviderProps) => {
 
     const [hair, setHair] = useState<any | null>(null)
     const [hairColor, setHairColor] = useState<string | null>(null)
-    const [typeHair, setTypeHair] = useState<number | 1>(3)
+    const [typeHair, setTypeHair] = useState<number | 1>(1)
 
     const [hat, setHat] = useState<any | null>(null)
 
+    const [eyes, setEyes] = useState<any | null>(null)
 
     return (
-        <UserContext.Provider value={{ body, setBody, menu, setMenu, hair, setHair, setHairColor, hairColor, hat, setHat, typeHair, setTypeHair }}>
+        <UserContext.Provider value={{ body, setBody, menu, setMenu, hair, setHair, setHairColor, hairColor, hat, setHat, typeHair, setTypeHair, eyes, setEyes }}>
             {children}
         </UserContext.Provider>
     )

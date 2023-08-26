@@ -1,13 +1,14 @@
 import { ModelViewStyled } from "./style";
 import { HairView } from "../bodyPart/hair";
 import { HatView } from "../bodyPart/hat";
+import { EyesView } from "../bodyPart/eyes";
 
 import { UserContext } from "../../context/useContext";
 import { useContext } from "react"
 
 export const ModelView = ({ body }: any) => {
 
-    const { hairColor, hat, hair, typeHair } = useContext(UserContext)
+    const { hairColor, hat, hair, typeHair, eyes } = useContext(UserContext)
 
     return (
         <ModelViewStyled body={body}>
@@ -67,6 +68,15 @@ export const ModelView = ({ body }: any) => {
                 {
                     hat ? (
                         <HatView svg={hat.svg} color1={hat.color1} color2={hat.color2} color3={hat.color3} color4={hat.color4} />
+                    ) : (
+                        <></>
+                    )
+                }
+            </div>
+            <div className="eyes">
+                {
+                    eyes ? (
+                        <EyesView svg={eyes.svg} />
                     ) : (
                         <></>
                     )

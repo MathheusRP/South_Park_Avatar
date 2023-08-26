@@ -21,7 +21,7 @@ export const Hat01 = (
 )
 
 export const Hat02 = (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="20 10 250.59 300.39">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="20 -5 250.59 300.39">
         <defs>
         </defs>
         <g id="Camada_8" data-name="Camada 8">

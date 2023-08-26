@@ -49,4 +49,11 @@ export const ModelViewStyled = styled.section<IModelView>`
         left: -10px;
     }
 
+    .eyes {
+        position: absolute;
+        width: 100%;
+        top: 10px;
+        /* left0px */
+    }
+
 `
