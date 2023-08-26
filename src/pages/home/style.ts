@@ -21,18 +21,6 @@ export const HomeStyled = styled.section`
             height: 150px;
             display: flex;
             overflow-x: scroll;
-            
-
-            &::-webkit-scrollbar{
-                background-color: var(--grey);
-                height: 10px;
-                border-radius: 5px;
-            }
-
-            &::-webkit-scrollbar-thumb {
-                background-color: var(--primaryColor);
-                border-radius: 5px;
-            }
         }
 
         .options {
@@ -43,6 +31,7 @@ export const HomeStyled = styled.section`
 
             .container {
                 position: relative;
+                /* background-color: aqua; */
 
                 .circle {
                     height: 145px;
@@ -61,6 +50,12 @@ export const HomeStyled = styled.section`
                     width: 100%;
                 }
             }
+
+            .container.eyes {
+                .icon {
+                    top: 25px;
+                }
+            }
             
             &::-webkit-scrollbar{
                 background-color: var(--grey);
@@ -74,8 +69,8 @@ export const HomeStyled = styled.section`
             }
 
             .optionsList {
-                display: flex;
-                flex-wrap: wrap;
+                /* display: flex; */
+                /* flex-wrap: wrap; */
                 display: grid;
                 grid-template-columns: 175px 175px 175px;
                 grid-row-gap: 25px;
@@ -95,13 +90,89 @@ export const HomeStyled = styled.section`
 
         .Window {
             margin-top: 300px;
-            width: 80%;
+            width: 100%;
             max-width: 400px;
             height: 800px;
             border-radius: 32px;
             display: flex;
             justify-content: center;
             position: relative;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        /* background-color: aqua; */
+        flex-direction: column-reverse;
+
+        .clothingSection {
+            height: 40vh;
+            width: 100%;
+            max-width: 1200px;
+            z-index: 20;
+            box-shadow: 0px -10px 10px rgb(0, 0, 0, 0.3);
+
+            
+            .menu {
+                overflow-y: hidden;
+
+                &::-webkit-scrollbar{
+                display: none;
+            }   
+            }
+
+            .options {
+                overflow-x: scroll;
+                /* width: 100%; */
+                display: flex;
+                /* align-items: center; */
+                overflow-y: hidden;
+                
+                &::-webkit-scrollbar{
+                    display: none;
+                }
+                
+                /* flex-wrap: nowrap; */
+
+                .optionsList {
+                   /* display: flex; */
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    gap: 20px;
+                    justify-content: start;
+                    /* align-items: end; */
+                    height: fit-content;
+
+                    .container {
+                        /* background-color: aqua; */
+                        /* display: grid;
+                        grid-template-columns: 175px 175px 175px;
+                        grid-row-gap: 25px;
+                        padding-right: 15px;
+                        justify-content: space-between;
+                        cursor: pointer;   */
+                        transform: scale(0.7);
+                        margin-bottom: 10px;
+
+                        height: 175px;
+                        width: 175px;
+
+                        .circle {
+                            /* background-color: aqua; */
+                            /* transform: scale(0.7); */
+                        }
+
+                    }
+                }
+            }
+
+        }
+
+        .viewer {
+            height: 60vh;
+            width: 100vw;
+            transform: scale(0.7);
+            
         }
     }
 

@@ -1,4 +1,5 @@
-import { Hair01, Hair01_2, Hair01_3, Hair01_4, Hair02, Hair03 } from "../assets/svg/hair"
+import { Hair01, Hair01_2, Hair01_3, Hair01_4, Hair03 } from "../assets/svg/hair"
+import { Hair02, Hair02_3, Hair02_4 } from "../assets/svg/hair"
 
 export const hairList = [
     {
@@ -10,13 +11,14 @@ export const hairList = [
         color: "#2e2e2e",
     },
     {
-        hair_id: 1,
+        hair_id: 2,
         svg: Hair02,
-        svg2: null,
+        svg3: Hair02_3,
+        svg4: Hair02_4,
         color: "#2f2f2f",
     },
     {
-        hair_id: 1,
+        hair_id: 3,
         svg: Hair03,
         color: "#2f2f2f",
     },

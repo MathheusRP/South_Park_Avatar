@@ -11,16 +11,32 @@ import { ColorList } from "../../components/colors";
 import { hatList } from "../../data/hatList"
 import { HatView } from "../../components/bodyPart/hat";
 
+import { eyesList } from "../../data/eyesList";
+import { EyesView } from "../../components/bodyPart/eyes";
+
 import { UserContext } from "../../context/useContext";
 import { useContext } from "react";
 
 export const Home = () => {
 
-    const { body, setBody, menu, setHair, hair, setHat, setTypeHair } = useContext(UserContext)
+    const { body, setBody, menu, setHair, hair, setHat, setTypeHair, hat, setEyes } = useContext(UserContext)
 
-    const setHatFunction = (hat: any) => {
-        setHat(hat)
-        setTypeHair(hat.typeHair)
+    const setHatFunction = (newHat: any) => {
+        if (hat != null && hat.hat_id === newHat.hat_id) {
+            setHat(null)
+            setTypeHair(1)
+        } else {
+            setHat(newHat)
+            setTypeHair(newHat.typeHair)
+        }
+    }
+
+    const setHairFunction = (newHair: any) => {
+        if (hair != null && hair.hair_id === newHair.hair_id) {
+            setHair(null)
+        } else {
+            setHair(newHair)
+        }
     }
 
     return (
@@ -41,7 +57,7 @@ export const Home = () => {
                             ) : menu == "hair" ? (
                                 hairList.map((hair, index) => {
                                     return (
-                                        <div key={index} className="container" onClick={() => setHair(hair)}>
+                                        <div key={index} className="container" onClick={() => setHairFunction(hair)}>
                                             <span className="circle"></span>
                                             <div className="icon">
                                                 <HairView svg={hair.svg} color={hair.color} />
@@ -56,6 +72,17 @@ export const Home = () => {
                                             <span className="circle"></span>
                                             <div className="icon">
                                                 <HatView svg={hat.svg} color1={hat.color1} color2={hat.color2} color3={hat.color3} color4={hat.color4} />
+                                            </div>
+                                        </div>
+                                    )
+                                })
+                            ) : menu == "eyes" ? (
+                                eyesList.map((eye, index) => {
+                                    return (
+                                        <div key={index} className="container eyes" onClick={() => setEyes(eye)}>
+                                            <span className="circle"></span>
+                                            <div className="icon">
+                                                <EyesView svg={eye.svg} />
                                             </div>
                                         </div>
                                     )

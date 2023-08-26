@@ -7,7 +7,9 @@ interface Icolor {
 }
 
 export const IconStyled = styled.li<Icolor>`
-    
+    height: 210px;
+    min-width: 175px;
+    /* background-color: red; */
 
     ${({ skin, underwear }) => {
         return css`
@@ -26,5 +28,11 @@ export const IconStyled = styled.li<Icolor>`
             }
         `
     }}
+
+@media (max-width: 1200px) {
+    transform: scale(0.7);
+    
+   
+}
 
 `

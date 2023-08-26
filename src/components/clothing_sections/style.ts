@@ -44,4 +44,11 @@ export const ClothingSectionStyle = styled.section`
             }
         }
     }
+
+    @media (max-width: 1200px) {
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        border-bottom: 4px solid var(--grey);
+    }
 `

@@ -23,7 +23,7 @@ export const hatList = [
         typeHair: 2
     },
     {
-        hat_id: 2,
+        hat_id: 3,
         svg: Hat03,
         color1: "#b86c44",
         color2: "#bb2f38",
