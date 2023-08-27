@@ -24,7 +24,7 @@ export const Eyes = ({ color1, color2 }: any) => {
 }
 
 export const Eyes01 = (
-    <svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="2 0 300.05 263.98">
+    <svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="-5 0 300.05 263.98">
 
         <g>
             <ellipse className="cls-1" cx="117.93" cy="147.22" rx="40.71" ry="33.67" transform="translate(-70.46 156.73) rotate(-54.19)" />

@@ -53,7 +53,14 @@ export const ModelViewStyled = styled.section<IModelView>`
         position: absolute;
         width: 100%;
         top: 10px;
+        right: 10px;
         /* left0px */
+    }
+
+    .mouth {
+        position: absolute;
+        top: -40px;
+        width: 100%
     }
 
 `

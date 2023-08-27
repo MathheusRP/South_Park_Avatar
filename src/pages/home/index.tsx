@@ -17,9 +17,12 @@ import { EyesView } from "../../components/bodyPart/eyes";
 import { UserContext } from "../../context/useContext";
 import { useContext } from "react";
 
+import { mouthList } from "../../data/mouthList";
+import { MouthView } from "../../components/bodyPart/mouth";
+
 export const Home = () => {
 
-    const { body, setBody, menu, setHair, hair, setHat, setTypeHair, hat, setEyes } = useContext(UserContext)
+    const { body, setBody, menu, setHair, hair, setHat, setTypeHair, hat, setEyes, setMouth } = useContext(UserContext)
 
     const setHatFunction = (newHat: any) => {
         if (hat != null && hat.hat_id === newHat.hat_id) {
@@ -83,6 +86,17 @@ export const Home = () => {
                                             <span className="circle"></span>
                                             <div className="icon">
                                                 <EyesView svg={eye.svg} />
+                                            </div>
+                                        </div>
+                                    )
+                                })
+                            ) : menu == "mouth" ? (
+                                mouthList.map((mouth, index) => {
+                                    return (
+                                        <div key={index} className="container" onClick={() => setMouth(mouth)}>
+                                            <span className="circle"></span>
+                                            <div className="icon">
+                                                <MouthView svg={mouth.svg} />
                                             </div>
                                         </div>
                                     )
