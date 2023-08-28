@@ -11,7 +11,12 @@ export const ModelViewStyled = styled.section<IModelView>`
 
     .body {
         /* background-color: aqua; */
-        
+        .hands {
+            position: absolute;
+            width: 100%;
+            top: 0px;
+            z-index: 20;
+        }
         
         ${({ body }) => {
         return css`
@@ -25,6 +30,14 @@ export const ModelViewStyled = styled.section<IModelView>`
                 }
                 .cls-3 {
                     fill: ${body.underwear};
+                }
+                .cls-4 {
+                    fill: red;
+                }
+                .cls-5 {
+                    fill: blue;
+                    opacity: 0%;
+
                 }
 
             `
@@ -61,6 +74,12 @@ export const ModelViewStyled = styled.section<IModelView>`
         position: absolute;
         top: -40px;
         width: 100%
+    }
+
+    .shirt {
+        position: absolute;
+        top: 85px;
+        width: 100%;
     }
 
 `

@@ -31,7 +31,9 @@ export const HomeStyled = styled.section`
 
             .container {
                 position: relative;
+                height: 150px;
                 /* background-color: aqua; */
+                
 
                 .circle {
                     height: 145px;
@@ -48,8 +50,26 @@ export const HomeStyled = styled.section`
                     position: absolute;
                     top: 0px;
                     width: 100%;
+                    z-index: 5;
                 }
+
+                &.shirt {
+                    height: 245px;
+
+                
+                    
+                    /* width: 200px; */
+                    
+                    /* height: 100px; */
+                    
+                    .icon {
+                        top: 36px;
+                        width: 100%;
+                    }
+                } 
             }
+
+            
 
             .container.eyes {
                 .icon {
@@ -162,7 +182,13 @@ export const HomeStyled = styled.section`
                             /* transform: scale(0.7); */
                         }
 
+                        &.shirt {
+                            transform: scale(1.1);
+                        }
+
                     }
+
+                    
                 }
             }
 

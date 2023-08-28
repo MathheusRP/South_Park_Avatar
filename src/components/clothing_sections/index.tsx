@@ -32,7 +32,7 @@ export const ClothingSection = () => {
                 <li onClick={() => setMenu("mouth")}>
                     <img src={MouthIcon} alt="Mouth icon" />
                 </li>
-                <li>
+                <li onClick={() => setMenu("shirt")}>
                     <img src={ShirtIcon} alt="Shirt icon" />
                 </li>
                 <li>

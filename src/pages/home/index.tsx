@@ -20,9 +20,13 @@ import { useContext } from "react";
 import { mouthList } from "../../data/mouthList";
 import { MouthView } from "../../components/bodyPart/mouth";
 
+import { shirtList } from "../../data/shirtList";
+import { ShirtView } from "../../components/bodyPart/shirt";
+import BodyModel from "../../assets/icons/body2.svg"
+
 export const Home = () => {
 
-    const { body, setBody, menu, setHair, hair, setHat, setTypeHair, hat, setEyes, setMouth } = useContext(UserContext)
+    const { body, setBody, menu, setHair, hair, setHat, setTypeHair, hat, setEyes, setMouth, setShirt } = useContext(UserContext)
 
     const setHatFunction = (newHat: any) => {
         if (hat != null && hat.hat_id === newHat.hat_id) {
@@ -101,7 +105,27 @@ export const Home = () => {
                                         </div>
                                     )
                                 })
-                            ) : (<></>)
+                            ) : menu == "shirt" ? (
+                                shirtList.map((shirt, index) => {
+                                    return (
+                                        <div key={index} className="container shirt" >
+                                            <img src={BodyModel} alt="model" />
+                                            <div onClick={() => setShirt(shirt)} className="icon">
+                                                <ShirtView svg={shirt.svg}
+                                                    color1={shirt.color1}
+                                                    color2={shirt.color2}
+                                                    color3={shirt.color3}
+                                                    color4={shirt.color4}
+                                                    color5={shirt.color5}
+                                                    color6={shirt.color6}
+                                                    color7={shirt.color7}
+                                                    color8={shirt.color8} />
+                                            </div>
+                                        </div>
+                                    )
+                                })
+                            ) :
+                                (<></>)
                         }
                     </ul>
                     <ColorList />
