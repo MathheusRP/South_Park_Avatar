@@ -32,6 +32,16 @@ export const hatList = [
         color2IsTrue: true,
         typeHair: 4
     },
+    {
+        hat_id: 3,
+        svg: Hat03,
+        color1: "#b86c44",
+        color2: "#bb2f38",
+        color3: null,
+        color4: null,
+        color2IsTrue: true,
+        typeHair: 4
+    },
 
 
 ]

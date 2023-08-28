@@ -26,6 +26,14 @@ export const IconStyled = styled.li<Icolor>`
             .cls-3{
                 fill: ${underwear};
             }
+
+            .cls-4{
+                fill: red;
+            }
+
+            .cls-5{
+                fill: blue;
+            }
         `
     }}
 

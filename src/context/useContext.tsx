@@ -23,6 +23,8 @@ interface IUserContext {
     setEyes: any
     mouth: any
     setMouth: any
+    shirt: any
+    setShirt: any
 }
 
 export const UserContext = createContext({} as IUserContext)
@@ -42,11 +44,13 @@ export const UserProvider = ({ children }: IUserProviderProps) => {
 
     const [mouth, setMouth] = useState<any | null>(null)
 
+    const [shirt, setShirt] = useState<any | null>(null)
+
     return (
         <UserContext.Provider value={{
             body, setBody, menu, setMenu, hair, setHair, setHairColor,
             hairColor, hat, setHat, typeHair, setTypeHair, eyes, setEyes,
-            mouth, setMouth
+            mouth, setMouth, shirt, setShirt
         }}>
             {children}
         </UserContext.Provider>
