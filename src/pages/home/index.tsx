@@ -24,9 +24,12 @@ import { shirtList } from "../../data/shirtList";
 import { ShirtView } from "../../components/bodyPart/shirt";
 import BodyModel from "../../assets/icons/body2.svg"
 
+import { PantsView } from "../../components/bodyPart/pants";
+import { pantsList } from "../../data/pantsList";
+
 export const Home = () => {
 
-    const { body, setBody, menu, setHair, hair, setHat, setTypeHair, hat, setEyes, setMouth, setShirt } = useContext(UserContext)
+    const { body, setBody, menu, setHair, hair, setHat, setTypeHair, hat, setEyes, setMouth, setShirt, setPants } = useContext(UserContext)
 
     const setHatFunction = (newHat: any) => {
         if (hat != null && hat.hat_id === newHat.hat_id) {
@@ -124,8 +127,26 @@ export const Home = () => {
                                         </div>
                                     )
                                 })
-                            ) :
-                                (<></>)
+                            ) : menu == "pants" ? (
+                                pantsList.map((pants, index) => {
+                                    return (
+                                        <div key={index} className="container shirt" >
+                                            <img src={BodyModel} alt="model" />
+                                            <div onClick={() => setPants(pants)} className="icon">
+                                                <PantsView svg={pants.svg}
+                                                    color1={pants.color1}
+                                                    color2={pants.color2}
+                                                    color3={pants.color3}
+                                                    color4={pants.color4}
+                                                    color5={pants.color5}
+                                                    color6={pants.color6}
+                                                    color7={pants.color7}
+                                                    color8={pants.color8} />
+                                            </div>
+                                        </div>
+                                    )
+                                })
+                            ) : (<></>)
                         }
                     </ul>
                     <ColorList />
