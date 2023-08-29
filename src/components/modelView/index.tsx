@@ -4,13 +4,14 @@ import { HatView } from "../bodyPart/hat";
 import { EyesView } from "../bodyPart/eyes";
 import { MouthView } from "../bodyPart/mouth";
 import { ShirtView } from "../bodyPart/shirt";
+import { PantsView } from "../bodyPart/pants";
 
 import { UserContext } from "../../context/useContext";
 import { useContext } from "react"
 
 export const ModelView = ({ body }: any) => {
 
-    const { hairColor, hat, hair, typeHair, eyes, mouth, shirt } = useContext(UserContext)
+    const { hairColor, hat, hair, typeHair, eyes, mouth, shirt, pants } = useContext(UserContext)
 
     return (
         <ModelViewStyled body={body}>
@@ -126,6 +127,24 @@ export const ModelView = ({ body }: any) => {
                             color6={shirt.color6}
                             color7={shirt.color7}
                             color8={shirt.color8} />
+                    ) : (
+                        <></>
+                    )
+                }
+            </div>
+            <div className="pants">
+                {
+                    pants ? (
+                        <PantsView svg={
+                            pants.svg}
+                            color1={pants.color1}
+                            color2={pants.color2}
+                            color3={pants.color3}
+                            color4={pants.color4}
+                            color5={pants.color5}
+                            color6={pants.color6}
+                            color7={pants.color7}
+                            color8={pants.color8} />
                     ) : (
                         <></>
                     )
