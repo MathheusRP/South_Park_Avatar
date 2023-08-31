@@ -70,7 +70,7 @@ export const Home = () => {
                                         <div key={index} className="container" onClick={() => setHairFunction(hair)}>
                                             <span className="circle"></span>
                                             <div className="icon">
-                                                <HairView svg={hair.svg} color={hair.color} />
+                                                <HairView svg={hair.svg} color={hair.color} color2={hair.color2} />
                                             </div>
                                         </div>
                                     )
@@ -150,6 +150,7 @@ export const Home = () => {
                         }
                     </ul>
                     <ColorList />
+
                 </section>
             </section>
             <section className="viewer">
@@ -157,6 +158,7 @@ export const Home = () => {
                     <ModelView body={body} hair={hair} />
                 </div>
             </section>
+
         </HomeStyled>
     )
 }

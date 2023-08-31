@@ -32,6 +32,7 @@ export const HomeStyled = styled.section`
             .container {
                 position: relative;
                 height: 150px;
+                margin-bottom: 50px;
                 /* background-color: aqua; */
                 
 
@@ -55,12 +56,6 @@ export const HomeStyled = styled.section`
 
                 &.shirt {
                     height: 245px;
-
-                
-                    
-                    /* width: 200px; */
-                    
-                    /* height: 100px; */
                     
                     .icon {
                         top: 36px;
@@ -146,9 +141,10 @@ export const HomeStyled = styled.section`
                 display: flex;
                 /* align-items: center; */
                 overflow-y: hidden;
+                /* overflow-x: scroll; */
                 
                 &::-webkit-scrollbar{
-                    display: none;
+                    /* display: none; */
                 }
                 
                 /* flex-wrap: nowrap; */
@@ -183,7 +179,8 @@ export const HomeStyled = styled.section`
                         }
 
                         &.shirt {
-                            transform: scale(1.1);
+                            transform: scale(0.8) translateY(-20px);
+                                                        
                         }
 
                     }

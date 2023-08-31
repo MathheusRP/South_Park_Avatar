@@ -75,3 +75,69 @@ export const Eyes03 = (
     </svg>
 )
 
+export const Eyes04 = (
+    <svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="-87 -85 300.47 200.68">
+        <g>
+            <ellipse className="cls-1" cx="36.23" cy="61.76" rx="40.71" ry="33.67" transform="translate(-35.05 55.01) rotate(-54.19)" />
+            <ellipse className="cls-1" cx="107.24" cy="61.74" rx="33.67" ry="40.71" transform="translate(-15.85 74.42) rotate(-35.81)" />
+        </g>
+        <g>
+            <rect className="cls-2" x="9.66" y="5.45" width="44.38" height="3" transform="translate(-.73 8.11) rotate(-14.34)" />
+            <rect className="cls-2" x="109.8" y="-14.93" width="3" height="43.76" transform="translate(76.59 112.93) rotate(-75.44)" />
+        </g>
+        <g>
+            <circle className="cls-2" cx="41.23" cy="83.97" r="5" />
+            <circle className="cls-2" cx="101.35" cy="83.97" r="5" />
+        </g>
+        <g>
+            <path className="cls-3" d="M72.18,65.24c-.21,0-.4-.13-.47-.34-.11-.32-2.6-7.98-.47-17.54,.06-.27,.33-.44,.6-.38s.44,.33,.38,.6c-2.07,9.29,.41,16.93,.44,17,.09,.26-.05,.54-.32,.63-.05,.02-.11,.03-.16,.03h0Z" />
+            <path className="cls-3" d="M71.29,45.54c-4.47-13.63-16.28-23.66-31.11-21.88-13.71,1.6-26.56,9.9-33.56,21.88,4.78-9.43,13.38-16.6,23.23-20.31,18.58-7.53,36.04,1.07,41.44,20.31h0Z" />
+            <path className="cls-3" d="M72.18,45.51c7.34-24.6,30.61-28.5,50.52-15.12,5.87,3.8,10.73,9.08,14.11,15.12-3.72-5.81-8.65-10.86-14.53-14.48-19.89-12.76-41.74-9.17-50.11,14.48h0Z" />
+        </g>
+    </svg>
+)
+
+export const Eyes05 = (
+    <svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="-87 -85 300.47 200.68">
+        <g>
+            <ellipse className="cls-1" cx="36.23" cy="61.76" rx="40.71" ry="33.67" transform="translate(-35.05 55.01) rotate(-54.19)" />
+            <ellipse className="cls-1" cx="107.24" cy="61.74" rx="33.67" ry="40.71" transform="translate(-15.85 74.42) rotate(-35.81)" />
+        </g>
+        <g>
+            <rect className="cls-2" x="88.8" y="5.45" width="44.38" height="3" transform="translate(1.74 27.71) rotate(-14.34)" />
+            <rect className="cls-2" x="30.04" y="-14.93" width="3" height="43.76" transform="translate(16.88 35.73) rotate(-75.44)" />
+        </g>
+        <g>
+            <circle className="cls-2" cx="48.65" cy="83.97" r="5" />
+            <circle className="cls-2" cx="122.18" cy="83.97" r="5" />
+        </g>
+        <g>
+            <path className="cls-3" d="M72.18,65.24c-.21,0-.4-.13-.47-.34-.11-.32-2.6-7.98-.47-17.54,.06-.27,.33-.44,.6-.38s.44,.33,.38,.6c-2.07,9.29,.41,16.93,.44,17,.09,.26-.05,.54-.32,.63-.05,.02-.11,.03-.16,.03h0Z" />
+            <path className="cls-3" d="M71.29,45.54c-4.47-13.63-16.28-23.66-31.11-21.88-13.71,1.6-26.56,9.9-33.56,21.88,4.78-9.43,13.38-16.6,23.23-20.31,18.58-7.53,36.04,1.07,41.44,20.31h0Z" />
+            <path className="cls-3" d="M72.18,45.51c7.34-24.6,30.61-28.5,50.52-15.12,5.87,3.8,10.73,9.08,14.11,15.12-3.72-5.81-8.65-10.86-14.53-14.48-19.89-12.76-41.74-9.17-50.11,14.48h0Z" />
+        </g>
+    </svg>
+)
+
+export const Eyes06 = (
+    <svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="-87 -85 300.47 200.68">
+        <g>
+            <ellipse className="cls-1" cx="36.23" cy="61.76" rx="40.71" ry="33.67" transform="translate(-35.05 55.01) rotate(-54.19)" />
+            <ellipse className="cls-1" cx="107.24" cy="61.74" rx="33.67" ry="40.71" transform="translate(-15.85 74.41) rotate(-35.81)" />
+        </g>
+        <g>
+            <rect className="cls-2" x="88.8" y="5.45" width="44.38" height="3" transform="translate(1.74 27.71) rotate(-14.34)" />
+            <rect className="cls-2" x="30.04" y="-7.98" width="3" height="43.76" transform="translate(10.16 40.93) rotate(-75.44)" />
+        </g>
+        <g>
+            <circle className="cls-2" cx="52.35" cy="64.44" r="5" />
+            <circle className="cls-2" cx="91.35" cy="64.44" r="5" />
+        </g>
+        <g>
+            <path className="cls-3" d="M72.18,65.24c-.21,0-.4-.13-.47-.34-.11-.32-2.6-7.98-.47-17.54,.06-.27,.33-.44,.6-.38s.44,.33,.38,.6c-2.07,9.29,.41,16.93,.44,17,.09,.26-.05,.54-.32,.63-.05,.02-.11,.03-.16,.03h0Z" />
+            <path className="cls-3" d="M71.29,45.54c-4.47-13.63-16.28-23.66-31.11-21.88-13.71,1.6-26.56,9.9-33.56,21.88,4.78-9.43,13.38-16.6,23.23-20.31,18.58-7.53,36.04,1.07,41.44,20.31h0Z" />
+            <path className="cls-3" d="M72.18,45.51c7.34-24.6,30.61-28.5,50.52-15.12,5.87,3.8,10.73,9.08,14.11,15.12-3.72-5.81-8.65-10.86-14.53-14.48-19.89-12.76-41.74-9.17-50.11,14.48h0Z" />
+        </g>
+    </svg>
+)
+

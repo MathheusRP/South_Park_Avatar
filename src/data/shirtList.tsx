@@ -1,4 +1,4 @@
-import { Shirt01, Shirt02, Shirt03 } from "../assets/svg/shirt";
+import { Shirt01, Shirt02, Shirt03, Shirt04, Shirt05 } from "../assets/svg/shirt";
 
 export const shirtList = [
     {
@@ -26,11 +26,35 @@ export const shirtList = [
         color8: null,
     },
     {
-        shirt_id: 1,
+        shirt_id: 3,
         svg: Shirt03,
         color1: "#ff5916",
         color2: "#1b1718",
         color3: null,
+        color4: null,
+        color5: null,
+        color6: null,
+        color7: null,
+        color8: null,
+    },
+    {
+        shirt_id: 4,
+        svg: Shirt04,
+        color1: "#37aeb7",
+        color2: "#cc6",
+        color3: "#333",
+        color4: "#fff",
+        color5: "#fdf571",
+        color6: null,
+        color7: null,
+        color8: null,
+    },
+    {
+        shirt_id: 5,
+        svg: Shirt05,
+        color1: "#fff",
+        color2: "#93b8a4",
+        color3: "#2a2828",
         color4: null,
         color5: null,
         color6: null,

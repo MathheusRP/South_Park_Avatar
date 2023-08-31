@@ -19,6 +19,11 @@ export const HatViewStyled = styled.li`
   
     }
 
+    .cls-5{
+        fill: #ed1556;
+  
+    }
+
     .cls-4{
         fill: #2b2b2b;
         opacity: 50%;
