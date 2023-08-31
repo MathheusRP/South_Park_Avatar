@@ -69,18 +69,17 @@ export const ModelView = ({ body }: any) => {
                     </svg>
                 </div>
             </div>
-
             <div className="hair">
                 {
                     hair ? (
                         typeHair == 2 && hair.svg2 ? (
-                            <HairView svg={hair.svg2} color={hairColor || hair.color} />
+                            <HairView svg={hair.svg2} color={hairColor || hair.color} color2={hair.color2} />
                         ) : typeHair == 3 && hair.svg3 ? (
-                            <HairView svg={hair.svg3} color={hairColor || hair.color} />
+                            <HairView svg={hair.svg3} color={hairColor || hair.color} color2={hair.color2} />
                         ) : typeHair == 4 && hair.svg4 ? (
-                            <HairView svg={hair.svg4} color={hairColor || hair.color} />
+                            <HairView svg={hair.svg4} color={hairColor || hair.color} color2={hair.color2} />
                         ) : (
-                            <HairView svg={hair.svg} color={hairColor || hair.color} />
+                            <HairView svg={hair.svg} color={hairColor || hair.color} color2={hair.color2} />
                         )
                     ) : (
                         <></>

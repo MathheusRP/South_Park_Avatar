@@ -1,4 +1,4 @@
-import { Mouth01, Mouth02, Mouth03 } from "../assets/svg/mouth";
+import { Mouth01, Mouth02, Mouth03, Mouth04, Mouth05 } from "../assets/svg/mouth";
 
 export const mouthList = [
     {
@@ -12,5 +12,13 @@ export const mouthList = [
     {
         mouth_id: 3,
         svg: Mouth03
+    },
+    {
+        mouth_id: 4,
+        svg: Mouth04
+    },
+    {
+        mouth_id: 5,
+        svg: Mouth05
     },
 ]

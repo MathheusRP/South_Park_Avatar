@@ -1,4 +1,4 @@
-import { Hat01, Hat02, Hat03 } from "../assets/svg/hat"
+import { Hat01, Hat02, Hat03, Hat04 } from "../assets/svg/hat"
 // import { Hair01 } from "../assets/svg/hair"
 
 export const hatList = [
@@ -41,6 +41,16 @@ export const hatList = [
         color4: null,
         color2IsTrue: true,
         typeHair: 4
+    },
+    {
+        hat_id: 4,
+        svg: Hat04,
+        color1: "#fff",
+        color2: "#692a3e",
+        color3: "#818181",
+        color4: "#ca6384",
+        color2IsTrue: false,
+        typeHair: 1
     },
 
 

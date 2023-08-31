@@ -9,6 +9,7 @@ interface IHat {
 
 export const HatViewStyled = styled.li<IHat>`
     z-index: 10;
+    transform: scale(1.5);
 
     ${({ color1, color2, color3, color4 }) => {
         return css`
@@ -17,18 +18,18 @@ export const HatViewStyled = styled.li<IHat>`
             }
 
             .cls-2{
-                fill: ${color2};
-       
+                fill: ${color2 || null};
+
             }
 
             .cls-3{
-                fill: ${color3};
-  
+                fill: ${color3 || null};
+
             }
 
             .cls-4{
-                fill: ${color4};
-  
+                fill: ${color4 || null};
+
             }
 
         `
