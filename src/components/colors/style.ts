@@ -14,6 +14,7 @@ export const ColorsListStyled = styled.section`
     border-bottom: none;
     border-radius: 16px 16px 0px 0px;
     transition: 1s;
+    z-index: 20;
 
     &.close {
         transform: translateY(120%);
@@ -71,6 +72,21 @@ export const ColorsListStyled = styled.section`
         li {
             width: 50px;
 
+        }
+
+        .noColor {
+            position: relative;
+            /* display: flex; */
+
+           span {
+            border: 2px solid red;
+            height: 100%;
+            position: absolute;
+            transform: rotate(45deg);
+            /* right: 0px; */
+            left: 20px;
+           }
+            
         }
     }
 

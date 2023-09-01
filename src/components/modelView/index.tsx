@@ -11,7 +11,7 @@ import { useContext } from "react"
 
 export const ModelView = ({ body }: any) => {
 
-    const { hairColor, hat, hair, typeHair, eyes, mouth, shirt, pants } = useContext(UserContext)
+    const { hairColor, hat, hair, typeHair, eyes, mouth, shirt, pants, shirtColor } = useContext(UserContext)
 
     return (
         <ModelViewStyled body={body}>
@@ -118,7 +118,7 @@ export const ModelView = ({ body }: any) => {
                     shirt ? (
                         <ShirtView svg={
                             shirt.svg}
-                            color1={shirt.color1}
+                            color1={shirtColor || shirt.color1}
                             color2={shirt.color2}
                             color3={shirt.color3}
                             color4={shirt.color4}
