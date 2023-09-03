@@ -1,10 +1,5 @@
 import { IconStyled } from "./style";
-
-interface IBodyView {
-    svg: any
-    skin?: string | null
-    underwear?: string | "#ededed"
-}
+import { IBodyView } from "../../../interfaces";
 
 export const BodyView = ({ svg, skin, underwear }: IBodyView) => {
 

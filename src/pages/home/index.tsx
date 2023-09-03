@@ -10,6 +10,7 @@ import { ColorList } from "../../components/colors";
 
 import { hatList } from "../../data/hatList"
 import { HatView } from "../../components/bodyPart/hat";
+import { IHat } from "../../interfaces";
 
 import { eyesList } from "../../data/eyesList";
 import { EyesView } from "../../components/bodyPart/eyes";
@@ -31,7 +32,7 @@ export const Home = () => {
 
     const { body, setBody, menu, setHair, hair, setHat, setTypeHair, hat, setEyes, setMouth, setShirt, setPants } = useContext(UserContext)
 
-    const setHatFunction = (newHat: any) => {
+    const setHatFunction = (newHat: IHat) => {
         if (hat != null && hat.hat_id === newHat.hat_id) {
             setHat(null)
             setTypeHair(1)
@@ -138,10 +139,7 @@ export const Home = () => {
                                                     color2={pants.color2}
                                                     color3={pants.color3}
                                                     color4={pants.color4}
-                                                    color5={pants.color5}
-                                                    color6={pants.color6}
-                                                    color7={pants.color7}
-                                                    color8={pants.color8} />
+                                                />
                                             </div>
                                         </div>
                                     )

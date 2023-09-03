@@ -1,7 +1,7 @@
 import { HatViewStyled } from "./style";
 
 interface IMouth {
-    svg: any | null
+    svg: JSX.Element | null
 }
 
 export const MouthView = ({ svg }: IMouth) => {

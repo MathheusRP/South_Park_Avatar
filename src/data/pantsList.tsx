@@ -8,10 +8,6 @@ export const pantsList = [
         color2: "#313132",
         color3: null,
         color4: null,
-        color5: null,
-        color6: null,
-        color7: null,
-        color8: null,
     },
     {
         pants_id: 2,
@@ -20,10 +16,6 @@ export const pantsList = [
         color2: "#161316",
         color3: null,
         color4: null,
-        color5: null,
-        color6: null,
-        color7: null,
-        color8: null,
     },
     {
         pants_id: 3,
@@ -32,10 +24,6 @@ export const pantsList = [
         color2: "#fff",
         color3: null,
         color4: null,
-        color5: null,
-        color6: null,
-        color7: null,
-        color8: null,
     },
     {
         pants_id: 4,
@@ -44,10 +32,6 @@ export const pantsList = [
         color2: "#fff",
         color3: "#ff973f",
         color4: null,
-        color5: null,
-        color6: null,
-        color7: null,
-        color8: null,
     },
     {
         pants_id: 5,
@@ -56,9 +40,5 @@ export const pantsList = [
         color2: "#282828",
         color3: "#9a9660",
         color4: null,
-        color5: null,
-        color6: null,
-        color7: null,
-        color8: null,
     },
 ]
