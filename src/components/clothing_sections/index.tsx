@@ -11,20 +11,10 @@ import { UserContext } from "../../context/useContext";
 import { useContext } from "react"
 
 export const ClothingSection = () => {
-
     const { setMenu } = useContext(UserContext)
 
-    const scrollButton = function (event: any) {
-        if (event.target.classList == "left") {
-            event.currentTarget.scrollBy({ left: -125, top: 0, behavior: "smooth" })
-        } else if (event.target.classList == "right") {
-            event.currentTarget.scrollBy({ left: 125, top: 0, behavior: "smooth" })
-        }
-    }
-
     return (
-        <ClothingSectionStyle onClick={(e) => scrollButton(e)} id="container">
-            {/* <button type="button" className="left"> {`<`}</button> */}
+        <ClothingSectionStyle id="container">
             <ul id="list">
                 <li onClick={() => setMenu("body")}>
                     <img src={BodyIcon} alt="Body icon" />
@@ -48,7 +38,6 @@ export const ClothingSection = () => {
                     <img src={Pants} alt="Pants icon" />
                 </li>
             </ul>
-            {/* <button type="button" className="right">{`>`}</button> */}
         </ClothingSectionStyle>
     )
 }

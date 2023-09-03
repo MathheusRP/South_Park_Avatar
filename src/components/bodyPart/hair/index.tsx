@@ -1,10 +1,6 @@
 import { IconStyled } from "./style";
+import { IHair } from "../../../interfaces";
 
-interface IHair {
-    svg: any
-    color?: string | null
-    color2?: string | null
-}
 
 export const HairView = ({ svg, color, color2 }: IHair) => {
 

@@ -1,6 +1,7 @@
 import { createContext, useState, ReactNode, Dispatch, SetStateAction } from "react"
 import { IBodyColor } from "../interfaces"
-// import { bodyList } from "../data/bodyIcon"
+import { IHair } from "../interfaces"
+import { IHat } from "../interfaces"
 
 interface IUserProviderProps {
     children: ReactNode
@@ -9,18 +10,18 @@ interface IUserProviderProps {
 interface IUserContext {
     body: IBodyColor
     setBody: Dispatch<SetStateAction<IBodyColor>>
-    menu: any
-    setMenu: any
-    hair: any
-    setHair: any
-    hairColor: any
-    setHairColor: any
-    hat: any
-    setHat: any
-    typeHair: number
-    setTypeHair: any
-    eyes: any
-    setEyes: any
+    menu: string
+    setMenu: Dispatch<SetStateAction<string>>
+    hair: IHair | null
+    setHair: Dispatch<SetStateAction<IHair | null>>
+    hairColor: string | null
+    setHairColor: Dispatch<SetStateAction<string | null>>
+    hat: IHat | null
+    setHat: Dispatch<SetStateAction<IHat | null>>
+    typeHair: number | undefined
+    setTypeHair: Dispatch<SetStateAction<number | undefined>>
+    eyes: JSX.Element | null
+    setEyes: React.Dispatch<React.SetStateAction<JSX.Element | null>>
     mouth: any
     setMouth: any
     shirt: any
@@ -28,7 +29,7 @@ interface IUserContext {
     pants: any
     setPants: any
     shirtColor: string
-    setShirtColor: any
+    setShirtColor: Dispatch<SetStateAction<string>>
 }
 
 export const UserContext = createContext({} as IUserContext)
@@ -38,13 +39,13 @@ export const UserProvider = ({ children }: IUserProviderProps) => {
 
     const [body, setBody] = useState<IBodyColor>({ id: 1, skin: "#c3a68a", underwear: "#ededed" })
 
-    const [hair, setHair] = useState<any | null>(null)
+    const [hair, setHair] = useState<IHair | null>(null)
     const [hairColor, setHairColor] = useState<string | null>(null)
-    const [typeHair, setTypeHair] = useState<number | 1>(1)
+    const [typeHair, setTypeHair] = useState<number | undefined>(1)
 
-    const [hat, setHat] = useState<any | null>(null)
+    const [hat, setHat] = useState<IHat | null>(null)
 
-    const [eyes, setEyes] = useState<any | null>(null)
+    const [eyes, setEyes] = useState<JSX.Element | null | null>(null)
 
     const [mouth, setMouth] = useState<any | null>(null)
 

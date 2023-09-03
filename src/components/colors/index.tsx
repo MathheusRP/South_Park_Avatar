@@ -45,9 +45,7 @@ const colorList = [
 ]
 
 export const ColorList = () => {
-
     const { setHairColor, menu, setShirtColor } = useContext(UserContext)
-
 
     const setColor = (color: string) => {
         if (menu == "hair") {

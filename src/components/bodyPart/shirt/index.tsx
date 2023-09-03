@@ -1,7 +1,7 @@
 import { HatViewStyled } from "./style";
 
 interface IMouth {
-    svg: any | null
+    svg: JSX.Element | null
     color1: string | null
     color2?: string | null
     color3?: string | null

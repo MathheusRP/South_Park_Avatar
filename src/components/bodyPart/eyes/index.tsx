@@ -1,7 +1,7 @@
 import { HatViewStyled } from "./style";
 
 interface IHat {
-    svg: any | null
+    svg: JSX.Element | null
 }
 
 export const EyesView = ({ svg }: IHat) => {

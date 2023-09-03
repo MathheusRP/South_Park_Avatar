@@ -1,13 +1,5 @@
 import { HatViewStyled } from "./style";
-
-interface IHat {
-    svg: any | null
-    color1?: string | null
-    color2?: string | null
-    color3?: string | null
-    color4?: string | null
-
-}
+import { IHat } from "../../../interfaces";
 
 export const HatView = ({ svg, color1, color2, color3, color4 }: IHat) => {
 
