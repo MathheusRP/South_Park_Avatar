@@ -21,7 +21,7 @@ interface IUserContext {
     typeHair: number | undefined
     setTypeHair: Dispatch<SetStateAction<number | undefined>>
     eyes: JSX.Element | null
-    setEyes: React.Dispatch<React.SetStateAction<JSX.Element | null>>
+    setEyes: any
     mouth: any
     setMouth: any
     shirt: any
